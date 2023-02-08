@@ -1,0 +1,99 @@
+#container {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	background-image: linear-gradient(to left, rgb(30, 151, 211), #9e18b3);
+	display: flex;
+	flex-direction: column;
+}
+
+#header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 0px;
+	height: 20%;
+	border-bottom: 1px solid #fff;
+}
+
+#weekdays {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+
+	margin: 0 auto;
+	padding: 10px 0;
+	justify-items: center;
+	width: 100%;
+
+	background-color: #00475a;
+}
+
+.name-day {
+	color: #fff;
+}
+
+#calendar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.container-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	justify-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(111, 0, 255);
+	padding-top: 30px;
+	border-top: 1px solid #fff;
+}
+
+.day {
+	background-color: #fff;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 5px 5px 5px #000;
+
+	transition: 500ms;
+	transform: scale(1.7);
+}
+
+.day:hover {
+	color: #000;
+	border: 2px solid rgb(255, 47, 210);
+	background-color: rgb(59, 147, 255);
+	cursor: pointer;
+	transform: scale(2.2);
+}
+
+#monthDisplay {
+	color: #fff;
+}
+
+.dayPassMonth {
+	background-color: rgb(138, 4, 134);
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 5px 5px 5px #000;
+
+	transition: 500ms;
+	transform: scale(1.7);
+}
+
+.dayPassMonth:hover {
+	color: #000;
+	border: 2px solid rgb(255, 47, 210);
+	background-color: rgb(59, 147, 255);
+	cursor: pointer;
+	transform: scale(2.2);
+}
