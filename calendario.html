@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,40 +13,65 @@
 
   <title>Calendario</title>
 </head>
+
 <body>
   <div id="container">
-      <div id="header">
-        <h2 id="monthDisplay"></h2>
+    <div id="header">
+      <h2 id="monthDisplay"></h2>
 
-        <div>
-          <button id="backButton">Voltar</button>
-          <button id="nextButton">Próximo</button>
+      <div>
+        <button id="backButton">Voltar</button>
+        <button id="nextButton">Próximo</button>
+      </div>
+
+    </div>
+
+    <div id="weekdays">
+      <div><a href="#" class="name-day">Domingo</a></div>
+      <div><a href="#" class="name-day">Segunda-feira</a></div>
+      <div><a href="#" class="name-day">Terça-feira</a></div>
+      <div><a href="#" class="name-day">Quarta-feira</a></div>
+      <div><a href="#" class="name-day">Quinta-feira</a></div>
+      <div><a href="#" class="name-day">Sexta-feira</a></div>
+      <div><a href="#" class="name-day">Sábado</a></div>
+    </div>
+
+
+    <!-- div dinamic -->
+    <div id="calendar">
+      <div class="container-calendar"></div>
+    </div>
+
+    <!-- message -->
+    <div class="message">
+      <button class="btn-closed">X</button>
+      <div class="wrapper-message">
+        <div class="wrapper-title-message">
+          <h2 class="message-title">Você está agendando um serviço para o dia </h2>
+          <h3 class="day-selected"></h3>
         </div>
-          
-      </div>
+        <form action="" method="get" class="form-confirm-hour">
+          <div class="input-label">
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Maria Jullya">
+          </div>
 
-      <div id="weekdays">
-        <div><a href="#" class="name-day">Domingo</a></div>
-        <div><a href="#" class="name-day">Segunda-feira</a></div>
-        <div><a href="#" class="name-day">Terça-feira</a></div>
-        <div><a href="#" class="name-day">Quarta-feira</a></div>
-        <div><a href="#" class="name-day">Quinta-feira</a></div>
-        <div><a href="#" class="name-day">Sexta-feira</a></div>
-        <div><a href="#" class="name-day">Sábado</a></div>
-      </div>
+          <div class="input-label">
+            <label for="name">Whatssap</label>
+            <input type="text" placeholder="(DDD) 91234-5678">
+          </div>
 
-      
-      <!-- div dinamic -->
-      <div id="calendar" >
-        <div class="container-calendar"></div>
+          <button type="submit" class="send">Agendar</button>
+        </form>
       </div>
-   
+    </div>
   </div>
-  
+
 
 
   <script src="./js/calendario.js"></script>
-  <script src="./js/teste.js"></script>
-  
+  <!--<script src="./js/teste.js"></script>-->
+
 </body>
+
 </html>
