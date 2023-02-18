@@ -50,7 +50,8 @@
           <h2 class="message-title">Você está agendando um serviço para o dia </h2>
           <h3 class="day-selected"></h3>
         </div>
-        <form action="" method="get" class="form-confirm-hour">
+
+        <form action="/form-data" method="POST" class="form-confirm-hour">
           <div class="input-label">
             <label for="name">Nome</label>
             <input type="text" placeholder="Maria Jullya">
@@ -59,6 +60,10 @@
           <div class="input-label">
             <label for="name">Whatssap</label>
             <input type="text" placeholder="(DDD) 91234-5678">
+          </div>
+
+          <div class="input-label-data">
+            <input type="date" name="date" id="date">
           </div>
 
           <button type="submit" class="send">Agendar</button>
