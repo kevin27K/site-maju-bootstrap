@@ -277,3 +277,9 @@ function returnDateCurrent(year, month, day) {
 		return `${newDate.getFullYear()}-0${newDate.getMonth() + 1}-${newDate.getDate()}`;
 	}
 }
+//api google
+
+//AIzaSyD8q8xuzt1mL5UYOmFfCPzyVHd_BaLBjrw
+
+//CX
+//b0855c1c366e841e0
